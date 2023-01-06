@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="{% static 'css/form_stle.css' %}">
+</head>
+<body>
+<form class="decor" method="post">
+<div class="form-left-decoration"></div>
+<div class="form-right-decoration"></div>
+<div class="circle"></div>
+<div class="form-inner">
+{% csrf_token %}
+{{ form.as_p }}
+<button type="submit">Register</button>
+</div>
+</form>
+</body>
+</html>
