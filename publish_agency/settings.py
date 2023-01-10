@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'publication',
     'custom_users',
+    'cloth'
 ]
 
 MIDDLEWARE = [
